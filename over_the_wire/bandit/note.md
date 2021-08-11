@@ -16,3 +16,21 @@
 
 ![image-20210808213052480](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/bandit/img/img:image-20210808213052480.png)
 
+## level 24:
+
+1. 在bash中生成连续的数字
+
+   `#!/bin/bash`
+
+   `for i in {000..9999}`
+
+   `do`
+
+   `.... $i`    <---- 0001, 0456 增加前导零
+
+   `done`
+
+2. 向本地端口发送 信息
+
+   `cat readme | nc localhost 8080`
+
