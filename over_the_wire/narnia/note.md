@@ -2,13 +2,13 @@
 
 ##  - source code
 
-![image-20210816210353564](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/narnia/img/image-20210816210353564.png)
+![image-20210816210353564](img/image-20210816210353564.png)
 
 string buffer overflow
 
 ##  - assemble code & 2 breakpoints(before & after strcpy)
 
-![image-20210816211553153](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/narnia/img/image-20210816211553153.png)
+![image-20210816211553153](img/image-20210816211553153.png)
 
 strcpy前后的两个断点，可以查看strcpy前后，buffer的变化情况，从而获取程序return address。
 
@@ -38,7 +38,7 @@ strcpy前后的两个断点，可以查看strcpy前后，buffer的变化情况�
 
 ##  - locate buffer address
 
-![image-20210816214855764](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/narnia/img/image-20210816214855764.png)
+![image-20210816214855764](img/image-20210816214855764.png)
 
 ### 1. Address in GDB
 
@@ -48,9 +48,9 @@ strcpy前后的两个断点，可以查看strcpy前后，buffer的变化情况�
 
 ### 2. Address in actual env.
 
-![image-20210816212856449](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/narnia/img/image-20210816212856449.png)
+![image-20210816212856449](img/image-20210816212856449.png)
 
-![image-20210816220842077](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/narnia/img/image-20210816220842077.png)
+![image-20210816220842077](img/image-20210816220842077.png)
 
 copy 可执行文件到tmp，确保文件名长度一致
 
@@ -58,9 +58,9 @@ copy 可执行文件到tmp，确保文件名长度一致
 
 查看 fffdd568 附近的内容，可以发现新的地址为  ffffd578
 
-![image-20210816221044676](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/narnia/img/image-20210816221044676.png)
+![image-20210816221044676](img/image-20210816221044676.png)
 
 ##  - Go Go Go
 
-![image-20210816221326719](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/narnia/img/image-20210816221326719.png)
+![image-20210816221326719](img/image-20210816221326719.png)
 
