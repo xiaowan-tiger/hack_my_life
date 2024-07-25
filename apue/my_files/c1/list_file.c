@@ -11,7 +11,7 @@ int main (int argc, char *argv[])
         err_quit("usage: ls dir_name");
     }
 
-    if (dp = opendir(argv[1]) == NULL)
+    if ((dp = opendir(argv[1])) == NULL)
     {
         err_sys("can't open %s", argv[1]);
     }

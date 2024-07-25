@@ -7,8 +7,7 @@ int main(void)
     while ((c = getc(stdin) != EOF))
     {
         if (putc(c, stdout) == EOF)
-            ; // error hanling
-
+            ;
     }
 
     exit(0);
