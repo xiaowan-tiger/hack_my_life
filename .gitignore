@@ -1,3 +1,4 @@
 *.o
 *.a
 apue/apue.3e/systype.sh
+.vscode/
